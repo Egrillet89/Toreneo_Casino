@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel Admin | Torneo de Baccarat</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="theme-shell">
+    <div class="page-bg"></div>
+    <main class="admin-layout">
+      <section class="hero compact marquee">
+        <p class="eyebrow">PANEL DE CONTROL</p>
+        <div class="hero-banner">
+          <span>EDITOR DEL TORNEO</span>
+        </div>
+        <p class="hero-subtitle">Actualiza la landing en tiempo real para la transmision</p>
+      </section>
+
+      <section class="panel section-frame">
+        <div class="section-title">
+          <span>DATOS GENERALES</span>
+        </div>
+        <form id="adminForm" class="admin-form">
+          <div class="form-grid">
+            <label>
+              Nombre torneo
+              <input name="tournamentName" type="text" />
+            </label>
+          </div>
+
+          <div class="admin-tabs" role="tablist" aria-label="Secciones del torneo">
+            <button type="button" class="tab-button is-active" data-tab="rounds">Rondas</button>
+            <button type="button" class="tab-button" data-tab="final">Final</button>
+            <button type="button" class="tab-button" data-tab="podium">Podio</button>
+          </div>
+
+          <section class="tab-panel" data-panel="rounds">
+            <section class="editor-section">
+              <div class="mini-title">DATOS DE RONDA</div>
+              <div class="form-grid">
+                <label>
+                  Ronda
+                  <select name="roundNumber" id="roundNumberSelect"></select>
+                </label>
+                <label>
+                  Total de inscritos
+                  <input name="totalInscritos" type="number" min="0" step="1" />
+                </label>
+              </div>
+            </section>
+
+            <section class="editor-section">
+              <div class="mini-title">MESAS (7 JUGADORES)</div>
+              <div id="roundTablesEditor" class="editor-list"></div>
+            </section>
+          </section>
+
+          <section class="tab-panel is-hidden" data-panel="final">
+            <section class="editor-section">
+              <div class="mini-title">FINAL</div>
+              <div id="finalistsEditor" class="editor-list"></div>
+            </section>
+          </section>
+
+          <section class="tab-panel is-hidden" data-panel="podium">
+            <section class="editor-section">
+              <div class="mini-title">PODIO</div>
+              <div id="podiumEditor" class="editor-list"></div>
+            </section>
+          </section>
+
+          <div class="admin-actions">
+            <div class="admin-actions-buttons">
+              <button id="saveButton" type="button" class="gold-button">Guardar</button>
+              <button id="showButton" type="button" class="gold-button secondary-button">Mostrar</button>
+            </div>
+            <div class="admin-actions-status">
+              <span id="visibleStatus" class="save-status">Mostrando: -</span>
+              <span id="saveStatus" class="save-status">Sin cambios recientes</span>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/admin.js?v=3"></script>
+  </body>
+</html>

@@ -1,0 +1,873 @@
+{
+  "tournamentName": "Torneo de Baccarat",
+  "broadcastTitle": "RONDA 3",
+  "headline": "",
+  "updatedAt": "2026-04-14T17:04:12.753Z",
+  "visibleSection": "podium",
+  "totalInscritos": 97,
+  "currentRoundNumber": 3,
+  "currentRound": {
+    "name": "Ronda 3",
+    "subtitle": "Mesas en juego",
+    "note": ""
+  },
+  "rounds": {
+    "1": {
+      "tables": [
+        {
+          "id": "A",
+          "players": [
+            {
+              "name": "juansd",
+              "points": 2500000
+            },
+            {
+              "name": "ana",
+              "points": 5000
+            },
+            {
+              "name": "pedro",
+              "points": 500
+            },
+            {
+              "name": "paco",
+              "points": 1250
+            },
+            {
+              "name": "piter",
+              "points": 900
+            },
+            {
+              "name": "carlos",
+              "points": 6000
+            },
+            {
+              "name": "diego",
+              "points": 56
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "players": [
+            {
+              "name": "esther",
+              "points": 8555
+            },
+            {
+              "name": "mari",
+              "points": 15623
+            },
+            {
+              "name": "joaquin",
+              "points": 4888
+            },
+            {
+              "name": "anibal",
+              "points": 5962
+            },
+            {
+              "name": "raquel",
+              "points": 96665
+            },
+            {
+              "name": "joe",
+              "points": 6663
+            },
+            {
+              "name": "judith",
+              "points": 5632
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "players": [
+            {
+              "name": "juan",
+              "points": 15621
+            },
+            {
+              "name": "sdfgfdhgdf",
+              "points": 0
+            },
+            {
+              "name": "hhfdfdhf",
+              "points": 0
+            },
+            {
+              "name": "hhfgjertrt",
+              "points": 0
+            },
+            {
+              "name": "etryetewrfsdf",
+              "points": 0
+            },
+            {
+              "name": "sdfdfdhgg",
+              "points": 0
+            },
+            {
+              "name": "dhfdfhdfhdf",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "players": [
+            {
+              "name": "dfhdfghfd",
+              "points": 0
+            },
+            {
+              "name": "hbxcb",
+              "points": 0
+            },
+            {
+              "name": "xcbxcdsg",
+              "points": 0
+            },
+            {
+              "name": "wertewrterry",
+              "points": 0
+            },
+            {
+              "name": "uytiyiluiklty",
+              "points": 0
+            },
+            {
+              "name": "yuiutruryrey",
+              "points": 0
+            },
+            {
+              "name": "eyryer",
+              "points": 0
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "tables": [
+        {
+          "id": "A",
+          "players": [
+            {
+              "name": "misael",
+              "points": 15000
+            },
+            {
+              "name": "eleazar",
+              "points": 389
+            },
+            {
+              "name": "mitzaida",
+              "points": 20000
+            },
+            {
+              "name": "Diego",
+              "points": 98
+            },
+            {
+              "name": "sdfsdf",
+              "points": 0
+            },
+            {
+              "name": "gfdgfdgd",
+              "points": 0
+            },
+            {
+              "name": "dfgdgfdfg",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "players": [
+            {
+              "name": "Elena",
+              "points": 0
+            },
+            {
+              "name": "Fabian",
+              "points": 0
+            },
+            {
+              "name": "Gaby",
+              "points": 0
+            },
+            {
+              "name": "Hugo",
+              "points": 0
+            },
+            {
+              "name": "sr4ertrert",
+              "points": 0
+            },
+            {
+              "name": "hgjghjfj",
+              "points": 0
+            },
+            {
+              "name": "tyuyrturtu",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "players": [
+            {
+              "name": "Ines",
+              "points": 100000
+            },
+            {
+              "name": "Javier",
+              "points": 0
+            },
+            {
+              "name": "Karen",
+              "points": 0
+            },
+            {
+              "name": "Leo",
+              "points": 0
+            },
+            {
+              "name": "uykjfh",
+              "points": 0
+            },
+            {
+              "name": "rtyuryu",
+              "points": 0
+            },
+            {
+              "name": "yrtuewrtye",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "players": [
+            {
+              "name": "Marta",
+              "points": 0
+            },
+            {
+              "name": "Nico",
+              "points": 0
+            },
+            {
+              "name": "Olga",
+              "points": 0
+            },
+            {
+              "name": "Pablo",
+              "points": 0
+            },
+            {
+              "name": "ryery",
+              "points": 0
+            },
+            {
+              "name": "etry",
+              "points": 0
+            },
+            {
+              "name": "eryrtyer",
+              "points": 0
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "tables": [
+        {
+          "id": "A",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        }
+      ]
+    },
+    "5": {
+      "tables": [
+        {
+          "id": "A",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": -1
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "tables": [
+        {
+          "id": "A",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "players": [
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            },
+            {
+              "name": "",
+              "points": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tables": [
+    {
+      "id": "A",
+      "title": "Mesa 9",
+      "players": "",
+      "score": "",
+      "status": "En juego"
+    },
+    {
+      "id": "B",
+      "title": "Mesa 10",
+      "players": "",
+      "score": "",
+      "status": "En juego"
+    },
+    {
+      "id": "C",
+      "title": "Mesa 11",
+      "players": "",
+      "score": "",
+      "status": "En juego"
+    },
+    {
+      "id": "D",
+      "title": "Mesa 12",
+      "players": "",
+      "score": "",
+      "status": "En juego"
+    }
+  ],
+  "ranking": [
+    {
+      "position": 1,
+      "name": "Ana",
+      "points": 120
+    },
+    {
+      "position": 2,
+      "name": "Javier",
+      "points": 110
+    },
+    {
+      "position": 3,
+      "name": "Marta",
+      "points": 105
+    },
+    {
+      "position": 4,
+      "name": "Hugo",
+      "points": 98
+    },
+    {
+      "position": 5,
+      "name": "Bruno",
+      "points": 90
+    }
+  ],
+  "finalists": [
+    {
+      "name": "Analisa ",
+      "points": 320
+    },
+    {
+      "name": "Javier",
+      "points": 300
+    },
+    {
+      "name": "Marta",
+      "points": 280
+    },
+    {
+      "name": "Hugo",
+      "points": 260
+    },
+    {
+      "name": "pedro",
+      "points": 566
+    },
+    {
+      "name": "juliomarco",
+      "points": 966
+    },
+    {
+      "name": "gabriel",
+      "points": 7555
+    },
+    {
+      "name": "misael",
+      "points": 5886
+    },
+    {
+      "name": "eleazar",
+      "points": 5485
+    }
+  ],
+  "podium": [
+    {
+      "position": 1,
+      "name": "Analuisa",
+      "prize": "$25,000",
+      "points": 15200
+    },
+    {
+      "position": 2,
+      "name": "Javier",
+      "prize": "$10,000",
+      "points": 12563
+    },
+    {
+      "position": 3,
+      "name": "Marta",
+      "prize": "$5,000",
+      "points": 11200
+    },
+    {
+      "position": 4,
+      "name": "pepe",
+      "prize": "",
+      "points": 9563
+    },
+    {
+      "position": 5,
+      "name": "juliana",
+      "prize": "",
+      "points": 6545
+    },
+    {
+      "position": 6,
+      "name": "alba",
+      "prize": "",
+      "points": 4025
+    },
+    {
+      "position": 7,
+      "name": "gabo",
+      "prize": "",
+      "points": 3100
+    },
+    {
+      "position": 8,
+      "name": "misael",
+      "prize": "",
+      "points": 2550
+    },
+    {
+      "position": 9,
+      "name": "eleazar",
+      "prize": "",
+      "points": 1456
+    }
+  ],
+  "secondaryPrizes": [
+    {
+      "label": null,
+      "prize": null
+    },
+    {
+      "label": null,
+      "prize": null
+    },
+    {
+      "label": null,
+      "prize": null
+    },
+    {
+      "label": null,
+      "prize": null
+    },
+    {
+      "label": null,
+      "prize": null
+    },
+    {
+      "label": null,
+      "prize": null
+    }
+  ]
+}

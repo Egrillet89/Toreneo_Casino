@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torneo de Baccarat</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="theme-shell">
+    <div class="page-bg"></div>
+    <main class="public-layout">
+      <section class="hero marquee">
+        <p class="eyebrow" id="tournamentName">TORNEO DE BACCARAT</p>
+        <div class="hero-banner">
+          <span id="broadcastTitle">LA GRAN FINAL</span>
+        </div>
+        <p class="hero-subtitle" id="headline">Seguimiento en vivo</p>
+        <p class="live-indicator">
+          <span class="live-dot"></span>
+          Actualizacion en tiempo real
+        </p>
+      </section>
+
+      <section class="view-stack" id="viewRounds">
+        <section class="rounds-template" id="roundsTemplate" aria-label="Ronda">
+          <div class="rounds-title" id="roundTitle"></div>
+          <div class="mesa-overlays" id="tableGrid"></div>
+          <div class="rounds-ranking is-hidden" id="roundsRanking"></div>
+          <div class="rounds-note" id="roundNote"></div>
+        </section>
+      </section>
+
+      <section class="view-stack is-hidden" id="viewFinal">
+        <section class="final-template" id="finalTemplate" aria-label="Final">
+          <div class="finalists-overlay" id="finalistsList"></div>
+        </section>
+      </section>
+
+      <section class="view-stack is-hidden" id="viewPodium">
+        <section class="podium-template" id="podiumTemplate" aria-label="Resultados finales">
+          <div class="podium-overlays" id="podium"></div>
+        </section>
+      </section>
+
+      <footer class="footer-note">
+        Ultima actualizacion: <span id="updatedAt">-</span>
+      </footer>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
