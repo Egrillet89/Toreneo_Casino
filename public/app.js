@@ -22,6 +22,8 @@ const nodes = {
   updatedAt: document.getElementById("updatedAt"),
 };
 
+let currentState = null;
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -42,12 +44,30 @@ function formatTimestamp(value) {
   }).format(date);
 }
 
-function renderTables(tables, roundNumber) {
+function getRoundsPhase(state) {
+  const phase = String(state?.roundsPhase ?? "rounds");
+  return phase === "semifinal" ? "semifinal" : "rounds";
+}
+
+function excelColumnLabel(index1Based) {
+  let n = Number(index1Based);
+  if (!Number.isFinite(n) || n <= 0) return "";
+  n = Math.trunc(n);
+  let label = "";
+  while (n > 0) {
+    n -= 1;
+    label = String.fromCharCode(65 + (n % 26)) + label;
+    n = Math.floor(n / 26);
+  }
+  return label;
+}
+
+function renderTables(tables, groupNumber) {
   nodes.tableGrid.innerHTML = tables
     .map(
       (table, index) => {
-        const safeRound = Number.isFinite(Number(roundNumber)) ? Number(roundNumber) : 1;
-        const mesaNumber = (safeRound - 1) * 4 + (index + 1);
+        const safeGroup = Number.isFinite(Number(groupNumber)) ? Number(groupNumber) : 1;
+        const mesaLabel = excelColumnLabel((safeGroup - 1) * 4 + (index + 1));
         const players = Array.isArray(table.players) ? table.players : [];
         const normalizedPlayers = Array.from({ length: 7 }).map((_, i) => {
           const p = players[i] || {};
@@ -75,7 +95,7 @@ function renderTables(tables, roundNumber) {
 
         return `
         <div class="mesa-overlay" data-id="${escapeHtml(table.id)}">
-          <div class="mesa-number-marker">${escapeHtml(mesaNumber)}</div>
+          <div class="mesa-number-marker">${escapeHtml(mesaLabel)}</div>
           <div class="mesa-players-grid">
             <div class="mesa-players-col">
               ${left}
@@ -215,9 +235,10 @@ function applyVisibleSection(section) {
 }
 
 function getRoundNumber(state) {
-  if (Number.isFinite(Number(state.currentRoundNumber))) {
-    return Number(state.currentRoundNumber);
-  }
+  const phase = getRoundsPhase(state);
+  const direct =
+    phase === "semifinal" ? state.currentSemifinalNumber : state.currentRoundNumber;
+  if (Number.isFinite(Number(direct))) return Number(direct);
 
   const fromName = String(state.currentRound?.name ?? "");
   const fromTitle = String(state.broadcastTitle ?? "");
@@ -229,6 +250,9 @@ function getRoundNumber(state) {
 
 function computeRoundsTemplateUrl(state) {
   const roundNumber = getRoundNumber(state);
+  if (getRoundsPhase(state) === "semifinal") {
+    return `/assets/backgrounds/${encodeURIComponent("rondas.png")}`;
+  }
   if (roundNumber === 1) return `/assets/backgrounds/${encodeURIComponent("ronda 1.png")}`;
   if (roundNumber && roundNumber > 1) return `/assets/backgrounds/${encodeURIComponent("rondas.png")}`;
   return `/assets/backgrounds/${encodeURIComponent("rondas.png")}`;
@@ -244,7 +268,9 @@ function computePodiumTemplateUrl() {
 
 function getRoundTables(state, roundNumber) {
   const key = String(roundNumber);
-  const roundTables = state.rounds?.[key]?.tables;
+  const phase = getRoundsPhase(state);
+  const source = phase === "semifinal" ? state.semifinal : state.rounds;
+  const roundTables = source?.[key]?.tables;
   if (Array.isArray(roundTables) && roundTables.length) {
     const order = ["A", "B", "C", "D"];
     return [...roundTables].sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
@@ -326,11 +352,17 @@ function startRankingAnimation(viewportEl, trackEl) {
 }
 
 function computeRankingFromAllRounds(state) {
+  const phase = getRoundsPhase(state);
   const rounds = state.rounds && typeof state.rounds === "object" ? state.rounds : {};
+  const semifinal = state.semifinal && typeof state.semifinal === "object" ? state.semifinal : {};
   const allTables = [];
-  Object.values(rounds).forEach((round) => {
-    const tables = Array.isArray(round?.tables) ? round.tables : [];
-    tables.forEach((t) => allTables.push(t));
+
+  const buckets = phase === "semifinal" ? [semifinal] : [rounds];
+  buckets.forEach((bucket) => {
+    Object.values(bucket || {}).forEach((round) => {
+      const tables = Array.isArray(round?.tables) ? round.tables : [];
+      tables.forEach((t) => allTables.push(t));
+    });
   });
   return computeRankingFromRoundTables(allTables);
 }
@@ -338,7 +370,10 @@ function computeRankingFromAllRounds(state) {
 function renderRoundsRanking(ranking, { visibleSection }) {
   if (!nodes.roundsRanking) return;
 
-  const shouldShow = visibleSection === "rounds";
+  const phase = getRoundsPhase(currentState || {});
+  const groupNumber = getRoundNumber(currentState || {});
+  const shouldShow =
+    visibleSection === "rounds" && (phase === "semifinal" || groupNumber >= 2);
   nodes.roundsRanking.classList.toggle("is-hidden", !shouldShow);
   if (!shouldShow) {
     nodes.roundsRanking.innerHTML = "";
@@ -412,20 +447,18 @@ function renderRoundsRanking(ranking, { visibleSection }) {
 }
 
 function renderState(state) {
+  currentState = state;
   const roundNumber = getRoundNumber(state);
+  const phase = getRoundsPhase(state);
 
   if (nodes.roundTitle) {
     const isRound1 = roundNumber === 1;
-    const isRondas = Boolean(roundNumber && roundNumber >= 2);
-
     nodes.roundTitle.classList.toggle("is-hidden", isRound1);
-
-    if (isRondas) {
-      nodes.roundTitle.textContent = `RONDA ${roundNumber}`;
+    if (phase === "semifinal") {
+      nodes.roundTitle.classList.toggle("is-hidden", false);
+      nodes.roundTitle.textContent = "SEMIFINAL";
     } else if (!isRound1) {
-      nodes.roundTitle.textContent = String(
-        state.currentRound?.name ?? state.broadcastTitle ?? "",
-      ).toUpperCase();
+      nodes.roundTitle.textContent = "RONDA 1";
     }
   }
 
@@ -438,7 +471,8 @@ function renderState(state) {
   }
   if (nodes.roundNote) {
     const total = Number(state.totalInscritos || 0);
-    nodes.roundNote.textContent = `TOTAL DE INSCRITOS: ${Number.isFinite(total) ? total : 0}`;
+    const label = getRoundsPhase(state) === "semifinal" ? "TOTAL CLASIFICADOS" : "TOTAL DE INSCRITOS";
+    nodes.roundNote.textContent = `${label}: ${Number.isFinite(total) ? total : 0}`;
   }
   if (nodes.updatedAt) nodes.updatedAt.textContent = formatTimestamp(state.updatedAt);
 
@@ -448,10 +482,12 @@ function renderState(state) {
       "--rounds-template-url",
       url ? `url("${url}")` : "none",
     );
-    const isRondas = Boolean(roundNumber && roundNumber >= 2);
+    const phase = getRoundsPhase(state);
+    const isRondas = phase === "semifinal" ? true : Boolean(roundNumber && roundNumber >= 2);
     nodes.roundsTemplate.classList.toggle("has-ranking", isRondas);
-    nodes.roundsTemplate.classList.toggle("template-round1", roundNumber === 1);
-    nodes.roundsTemplate.classList.toggle("template-rondas", isRondas || !roundNumber);
+    nodes.roundsTemplate.classList.toggle("template-round1", phase !== "semifinal" && roundNumber === 1);
+    nodes.roundsTemplate.classList.toggle("template-rondas", phase === "semifinal" || isRondas || !roundNumber);
+    nodes.roundsTemplate.classList.toggle("template-semifinal", phase === "semifinal");
   }
 
   if (nodes.finalTemplate) {
@@ -474,18 +510,20 @@ function renderState(state) {
   const roundTables = getRoundTables(state, safeRoundNumber);
   renderTables(roundTables, safeRoundNumber);
 
-  let computedRanking = Array.isArray(state.globalRanking) ? state.globalRanking : [];
-  if (!computedRanking.length) {
-    computedRanking = computeRankingFromAllRounds(state);
-  }
+  let computedRanking = computeRankingFromAllRounds(state);
+
+  const rankingStorageKey =
+    phase === "semifinal"
+      ? "torneoBaccarat:globalRanking:semifinal"
+      : "torneoBaccarat:globalRanking:rounds";
 
   if (computedRanking.length) {
     try {
-      localStorage.setItem("torneoBaccarat:globalRanking", JSON.stringify(computedRanking));
+      localStorage.setItem(rankingStorageKey, JSON.stringify(computedRanking));
     } catch {}
   } else {
     try {
-      const stored = JSON.parse(localStorage.getItem("torneoBaccarat:globalRanking") || "null");
+      const stored = JSON.parse(localStorage.getItem(rankingStorageKey) || "null");
       if (Array.isArray(stored)) computedRanking = stored;
     } catch {}
   }

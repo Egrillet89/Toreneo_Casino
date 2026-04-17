@@ -31,17 +31,39 @@
 
           <div class="admin-tabs" role="tablist" aria-label="Secciones del torneo">
             <button type="button" class="tab-button is-active" data-tab="rounds">Rondas</button>
+            <button type="button" class="tab-button" data-tab="semifinal">Semifinal</button>
             <button type="button" class="tab-button" data-tab="final">Final</button>
             <button type="button" class="tab-button" data-tab="podium">Podio</button>
           </div>
 
           <section class="tab-panel" data-panel="rounds">
             <section class="editor-section">
-              <div class="mini-title">DATOS DE RONDA</div>
+              <div class="mini-title">DATOS DE GRUPO</div>
               <div class="form-grid">
                 <label>
-                  Ronda
+                  Grupo
                   <select name="roundNumber" id="roundNumberSelect"></select>
+                </label>
+                <label>
+                  Total clasificados
+                  <input name="totalInscritos" type="number" min="0" step="1" />
+                </label>
+              </div>
+            </section>
+
+            <section class="editor-section">
+              <div class="mini-title">MESAS (7 JUGADORES)</div>
+              <div id="roundTablesEditor" class="editor-list"></div>
+            </section>
+          </section>
+
+          <section class="tab-panel is-hidden" data-panel="semifinal">
+            <section class="editor-section">
+              <div class="mini-title">DATOS DE GRUPO</div>
+              <div class="form-grid">
+                <label>
+                  Grupo
+                  <select name="semifinalNumber" id="semifinalNumberSelect"></select>
                 </label>
                 <label>
                   Total de inscritos
@@ -52,7 +74,7 @@
 
             <section class="editor-section">
               <div class="mini-title">MESAS (7 JUGADORES)</div>
-              <div id="roundTablesEditor" class="editor-list"></div>
+              <div id="semifinalTablesEditor" class="editor-list"></div>
             </section>
           </section>
 

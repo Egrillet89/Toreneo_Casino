@@ -63,6 +63,19 @@ function ensurePodiumShape(podium) {
   });
 }
 
+function clampSemifinalGroup(value) {
+  const asNumber = Number(value);
+  if (!Number.isFinite(asNumber)) return 1;
+  return Math.min(20, Math.max(1, Math.trunc(asNumber)));
+}
+
+function ensureSemifinalShape(semifinal, groupNumber) {
+  const next = semifinal && typeof semifinal === "object" ? semifinal : {};
+  const key = String(groupNumber);
+  next[key] = ensureRoundShape(next[key]);
+  return next;
+}
+
 function computeGlobalRanking(rounds) {
   const pointsByName = new Map();
 
@@ -89,6 +102,7 @@ function normalizeState(state) {
   const next = state && typeof state === "object" ? { ...state } : {};
 
   next.visibleSection = next.visibleSection || "rounds";
+  next.roundsPhase = next.roundsPhase === "semifinal" ? "semifinal" : "rounds";
   next.totalInscritos = Number.isFinite(Number(next.totalInscritos))
     ? Number(next.totalInscritos)
     : 0;
@@ -107,13 +121,16 @@ function normalizeState(state) {
   const key = String(currentRoundNumber);
   rounds[key] = ensureRoundShape(rounds[key]);
   next.rounds = rounds;
-  next.globalRanking = computeGlobalRanking(rounds);
+  const semifinalGroup = clampSemifinalGroup(next.currentSemifinalNumber ?? 1);
+  next.currentSemifinalNumber = semifinalGroup;
+  next.semifinal = ensureSemifinalShape(next.semifinal, semifinalGroup);
+  next.globalRanking = computeGlobalRanking({ ...rounds, ...(next.semifinal || {}) });
 
   next.currentRound = next.currentRound && typeof next.currentRound === "object" ? next.currentRound : {};
-  next.currentRound.name = `Ronda ${currentRoundNumber}`;
+  next.currentRound.name = `Grupo ${next.roundsPhase === "semifinal" ? semifinalGroup : currentRoundNumber}`;
 
   if (typeof next.broadcastTitle !== "string" || !next.broadcastTitle.trim()) {
-    next.broadcastTitle = `RONDA ${currentRoundNumber}`;
+    next.broadcastTitle = next.roundsPhase === "semifinal" ? "SEMIFINAL" : "RONDA 1";
   }
 
   return next;
