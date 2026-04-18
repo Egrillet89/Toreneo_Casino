@@ -1,15 +1,15 @@
 {
   "tournamentName": "Torneo de Baccarat",
-  "broadcastTitle": "RONDA 1",
+  "broadcastTitle": "SEMIFINAL",
   "headline": "",
-  "updatedAt": "2026-04-17T16:22:27.303Z",
+  "updatedAt": "2026-04-18T00:53:28.199Z",
   "visibleSection": "rounds",
   "totalInscritos": 126,
-  "roundsPhase": "rounds",
+  "roundsPhase": "semifinal",
   "currentRoundNumber": 2,
   "currentSemifinalNumber": 1,
   "currentRound": {
-    "name": "Grupo 2",
+    "name": "Grupo 1",
     "subtitle": "Mesas en juego",
     "note": ""
   },
@@ -2196,29 +2196,29 @@
   "tables": [
     {
       "id": "A",
-      "title": "Mesa E",
-      "players": "Misael, Eeleazar, Mitzaida, Diego, Karla F., Maria H, Julian J",
+      "title": "Mesa A",
+      "players": "dfzsdafasdfsadf, fasdfasdfsadf, frgfdsgsd, asfasa, ssafdsdf, sdfsaa, asdfasf",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "B",
-      "title": "Mesa F",
-      "players": "Elena, Fabian, Gaby, Hugo, Stella D, Andres U, Simon P",
+      "title": "Mesa B",
+      "players": "sdfsdfa, afsdfas, asdfsafa, sffasd, sdfsf, sadfas, asdfhghfdh",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "C",
-      "title": "Mesa G",
-      "players": "Ines, Javier, Karen, Leo, Pedro P, Miguel A, Ptricia L",
+      "title": "Mesa C",
+      "players": "hdfgjhfhertre, twetwet, we, qrqwrerqw, erqwerq, qrew, qer",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "D",
-      "title": "Mesa H",
-      "players": "Marta, Nico, Olga, Pablo, Reyner M, Henry F, Carl J",
+      "title": "Mesa D",
+      "players": "rqerqer, qwerqw, qwertrey, retyer, tdfgaf, asynutyjrtehs, wrasdfs",
       "score": "",
       "status": "En juego"
     }
