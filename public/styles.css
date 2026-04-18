@@ -793,7 +793,7 @@ body {
 
 .rounds-title {
   position: absolute;
-  top: 12.6%;
+  top: 11%;
   left: 20%;
   right: 20%;
   height: 10%;
@@ -811,7 +811,7 @@ body {
 }
 
 .rounds-template.template-rondas .rounds-title {
-  top: 13.9%;
+  top: 14.5%;
   left: 17%;
   right: 19%;
   height: 12%;
@@ -819,7 +819,7 @@ body {
 }
 
 .rounds-template.template-semifinal .rounds-title {
-  top: 13.9%;
+  top: 15%;
 }
 
 .mesa-overlays {
@@ -925,23 +925,23 @@ body {
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="A"] .mesa-number-marker {
-  top: -3%;
-  left: 5%;
+  top: -1.5%;
+  left: 4.5%;
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="B"] .mesa-number-marker {
-  top: 3%;
-  left: 17%;
+  top: 4.5%;
+  left: 14%;
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="C"] .mesa-number-marker {
   top: -11%;
-  left: -4.5%;
+  left: -5%;
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="D"] .mesa-number-marker {
   top: -11%;
-  left: 14%;
+  left: 10.5%;
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="A"] .mesa-players-grid{
@@ -976,15 +976,19 @@ body {
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="A"] .mesa-players-col.is-right .mesa-player-points {
-  padding-left: 80px;
+  justify-self: end;
+  text-align: left;
+  padding-left: 0px;
+  position: relative;
+  left: 85px;
 }
 
 
 
 .rounds-template.template-rondas .mesa-overlay[data-id="B"] .mesa-players-grid {
-  margin-top: 39px;
+  margin-top: 45px;
   margin-bottom: 40px;
-  margin-left: 55px;
+  margin-left: 35px;
 }
 
 /* modificar columnas mesa B */
@@ -1010,7 +1014,11 @@ body {
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="B"] .mesa-players-col.is-right .mesa-player-points {
-  padding-left: 35px;
+  justify-self: end;
+  text-align: left;
+  padding-left: 0px;
+  position: relative;
+  left: 27px;
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="C"] .mesa-players-grid {
@@ -1040,13 +1048,17 @@ body {
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="C"] .mesa-players-col.is-right .mesa-player-points {
-  padding-left: 35px;
+  justify-self: end;
+  text-align: left;
+  padding-left: 0px;
+  position:relative;
+  left: 40px;
 }
 
 /* modificar columnas mesa D */
 .rounds-template.template-rondas .mesa-overlay[data-id="D"] .mesa-players-grid {
   margin-top: 4px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .rounds-template.template-rondas .mesa-overlay[data-id="D"] .mesa-players-col:not(.is-right) .mesa-player-row {
   grid-template-columns: 20px 1fr 20px;
@@ -1057,19 +1069,23 @@ body {
   text-align: left;
   padding-left: 0;
   position: relative;
-  left: 20px;
+  left: 15px;
 }
 .rounds-template.template-rondas .mesa-overlay[data-id="D"] .mesa-players-col.is-right {
   padding-left: 8px;
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="D"] .mesa-players-col.is-right .mesa-player-row {
-  grid-template-columns: 20px 1fr 15px;
-  gap: 4px;
+  grid-template-columns: 15px 1fr 50px;
+  gap: 1px;
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="D"] .mesa-players-col.is-right .mesa-player-points {
-  padding-left: 20px;
+  justify-self: end;
+  text-align: left;
+  padding-left: 0px;
+  position: relative;
+  left: 15px;
 }
 
 .rounds-template.template-round1::before {
@@ -1162,12 +1178,12 @@ body {
   position: absolute;
   left: 26%;
   right: 26%;
-  bottom: 18.6%;
+  bottom: 20%;
   min-height: 36px;
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 6px 14px;
+  padding: 13px 14px;
   color: rgba(248, 235, 199, 0.98);
   font-weight: 900;
   letter-spacing: 0.04em;
@@ -1190,7 +1206,7 @@ body {
 .rounds-ranking {
   position: absolute;
   top: 33%;
-  right: 0.4%;
+  right: 2.5%;
   width: 23.8%;
   height: 41.2%;
   overflow: hidden;
