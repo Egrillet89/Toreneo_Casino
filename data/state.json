@@ -1,11 +1,11 @@
 {
   "tournamentName": "Torneo de Baccarat",
-  "broadcastTitle": "RONDA 1",
+  "broadcastTitle": "SEMIFINAL",
   "headline": "",
-  "updatedAt": "2026-04-18T04:05:00.348Z",
+  "updatedAt": "2026-04-18T04:19:32.008Z",
   "visibleSection": "final",
   "totalInscritos": 126,
-  "roundsPhase": "rounds",
+  "roundsPhase": "semifinal",
   "currentRoundNumber": 1,
   "currentSemifinalNumber": 1,
   "currentRound": {
@@ -2197,28 +2197,28 @@
     {
       "id": "A",
       "title": "Mesa A",
-      "players": "Raul, carlos, julian, petra, juan carlos, felipe, cesar",
+      "players": "dfzsdafasdfsadf, fasdfasdfsadf, frgfdsgsd, asfasa, ssafdsdf, sdfsaa, asdfasf",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "B",
       "title": "Mesa B",
-      "players": "maricarmen, paco, mitzal, davidl, mohamad, chinchulin, akita",
+      "players": "sdfsdfa, afsdfas, asdfsafa, sffasd, sdfsf, sadfas, asdfhghfdh",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "C",
       "title": "Mesa C",
-      "players": "aoky, felicinao, miguel, alexys, rafael, roberto, pauñ",
+      "players": "hdfgjhfhertre, twetwet, we, qrqwrerqw, erqwerq, qrew, qer",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "D",
       "title": "Mesa D",
-      "players": "patricia, durgino, scaloni, hugo, nicola, wilner, ivan",
+      "players": "rqerqer, qwerqw, qwertrey, retyer, tdfgaf, asynutyjrtehs, wrasdfs",
       "score": "",
       "status": "En juego"
     }
