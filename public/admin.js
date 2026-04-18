@@ -5,6 +5,9 @@ const saveStatus = document.getElementById("saveStatus");
 const visibleStatus = document.getElementById("visibleStatus");
 const saveButton = document.getElementById("saveButton");
 const showButton = document.getElementById("showButton");
+const resetRankingButton = document.getElementById("resetRankingButton");
+const deleteDataButton = document.getElementById("deleteDataButton");
+const exportDataButton = document.getElementById("exportDataButton");
 const tabButtons = Array.from(document.querySelectorAll(".tab-button"));
 const tabPanels = Array.from(document.querySelectorAll(".tab-panel"));
 const roundNumberSelect = document.getElementById("roundNumberSelect");
@@ -580,6 +583,147 @@ showButton.addEventListener("click", () => {
   commitActiveTabEdits();
   handleSave({ show: true });
 });
+
+function resetRankingPoints() {
+  if (!currentState) return;
+
+  currentState.rankingResetAt = `${new Date().toISOString()}-${Math.random().toString(16).slice(2)}`;
+  currentState.globalRanking = [];
+
+  const resetBucket = (bucket) => {
+    if (!bucket || typeof bucket !== "object") return;
+    Object.values(bucket).forEach((round) => {
+      const normalized = ensureRoundShape(round);
+      normalized.tables.forEach((table) => {
+        table.players.forEach((player) => {
+          player.points = 0;
+        });
+      });
+      Object.assign(round, normalized);
+    });
+  };
+
+  resetBucket(currentState.rounds);
+  resetBucket(currentState.semifinal);
+  if (Array.isArray(currentState.ranking)) currentState.ranking = [];
+  currentState.finalists = ensureFinalistsShape(currentState.finalists).map((item) => ({
+    ...item,
+    points: 0,
+  }));
+  currentState.podium = ensurePodiumShape(currentState.podium).map((item) => ({
+    ...item,
+    points: 0,
+  }));
+
+  ensureStateRounds(currentState, selectedRoundNumber);
+  ensureStateSemifinal(currentState, selectedSemifinalNumber);
+}
+
+if (resetRankingButton) {
+  resetRankingButton.addEventListener("click", async () => {
+    commitActiveTabEdits();
+    const ok = window.confirm(
+      "Esto pondrá en 0 los puntos de todos los jugadores (Grupos y Semifinal) y también Final/Podio. ¿Continuar?",
+    );
+    if (!ok) return;
+    resetRankingPoints();
+    if (selectedTab === "rounds" && roundTablesEditor) {
+      renderGroupTables(selectedRoundNumber, roundTablesEditor, {
+        sourceKey: "rounds",
+        inputPrefix: "player",
+        labelPrefix: "Grupo",
+      });
+    }
+    if (selectedTab === "semifinal" && semifinalTablesEditor) {
+      renderGroupTables(selectedSemifinalNumber, semifinalTablesEditor, {
+        sourceKey: "semifinal",
+        inputPrefix: "semi-player",
+        labelPrefix: "Grupo",
+      });
+    }
+    if (selectedTab === "final") renderFinalistsEditors(currentState.finalists);
+    if (selectedTab === "podium") renderPodiumEditors(currentState.podium);
+    await handleSave({ show: false });
+  });
+}
+
+function clearAllGameData() {
+  if (!currentState) return;
+
+  currentState.rankingResetAt = `${new Date().toISOString()}-${Math.random().toString(16).slice(2)}`;
+  currentState.globalRanking = [];
+
+  const keepTournamentName = typeof currentState.tournamentName === "string" ? currentState.tournamentName : "";
+  currentState.visibleSection = "rounds";
+  currentState.roundsPhase = "rounds";
+  currentState.totalInscritos = 0;
+  currentState.currentRoundNumber = 1;
+  currentState.currentSemifinalNumber = 1;
+
+  currentState.rounds = {};
+  currentState.semifinal = {};
+  currentState.tables = [];
+  currentState.ranking = [];
+
+  currentState.finalists = ensureFinalistsShape([]).map((item) => ({ ...item, name: "", points: 0 }));
+  currentState.podium = ensurePodiumShape([]).map((item) => ({ ...item, name: "", points: 0 }));
+  currentState.tournamentName = keepTournamentName;
+
+  ensureStateRounds(currentState, 1);
+  ensureStateSemifinal(currentState, 1);
+}
+
+function downloadTextFile(filename, content) {
+  const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+}
+
+function toExportText(state) {
+  const safeName = String(state?.tournamentName ?? "");
+  const timestamp = new Date().toISOString();
+  const json = JSON.stringify(state, null, 2);
+  return `TORNEO: ${safeName}\nEXPORT: ${timestamp}\n\n${json}\n`;
+}
+
+if (deleteDataButton) {
+  deleteDataButton.addEventListener("click", async () => {
+    commitActiveTabEdits();
+    const ok = window.confirm(
+      "Esto eliminará todos los registros del juego (nombres y puntos) en Grupos, Semifinal, Final y Podio. ¿Continuar?",
+    );
+    if (!ok) return;
+
+    const editingTab = selectedTab;
+    const editingRound = selectedRoundNumber;
+    const editingSemifinal = selectedSemifinalNumber;
+
+    clearAllGameData();
+    selectedRoundNumber = 1;
+    selectedSemifinalNumber = 1;
+    renderForm(currentState, {
+      keepTab: editingTab,
+      keepRoundNumber: 1,
+      keepSemifinalNumber: 1,
+    });
+    await handleSave({ show: false });
+  });
+}
+
+if (exportDataButton) {
+  exportDataButton.addEventListener("click", () => {
+    commitActiveTabEdits();
+    const exported = collectState({ applyDisplaySelection: false });
+    const stamp = new Date().toISOString().replaceAll(":", "-");
+    downloadTextFile(`torneo-export-${stamp}.txt`, toExportText(exported));
+  });
+}
 
 tabButtons.forEach((button) => {
   button.addEventListener("click", () => {

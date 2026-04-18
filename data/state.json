@@ -1,11 +1,11 @@
 {
   "tournamentName": "Torneo de Baccarat",
-  "broadcastTitle": "SEMIFINAL",
+  "broadcastTitle": "RONDA 1",
   "headline": "",
-  "updatedAt": "2026-04-18T04:19:32.008Z",
-  "visibleSection": "final",
-  "totalInscritos": 126,
-  "roundsPhase": "semifinal",
+  "updatedAt": "2026-04-18T18:32:55.967Z",
+  "visibleSection": "rounds",
+  "totalInscritos": 0,
+  "roundsPhase": "rounds",
   "currentRoundNumber": 1,
   "currentSemifinalNumber": 1,
   "currentRound": {
@@ -20,32 +20,32 @@
           "id": "A",
           "players": [
             {
-              "name": "Raul",
-              "points": 52889
+              "name": "",
+              "points": 0
             },
             {
-              "name": "carlos",
-              "points": 5123
+              "name": "",
+              "points": 0
             },
             {
-              "name": "julian",
-              "points": 2000
+              "name": "",
+              "points": 0
             },
             {
-              "name": "petra",
-              "points": 556
+              "name": "",
+              "points": 0
             },
             {
-              "name": "juan carlos",
-              "points": 555
+              "name": "",
+              "points": 0
             },
             {
-              "name": "felipe",
-              "points": 5105
+              "name": "",
+              "points": 0
             },
             {
-              "name": "cesar",
-              "points": 699
+              "name": "",
+              "points": 0
             }
           ]
         },
@@ -53,32 +53,32 @@
           "id": "B",
           "players": [
             {
-              "name": "maricarmen",
-              "points": 4548
+              "name": "",
+              "points": 0
             },
             {
-              "name": "paco",
-              "points": 451
+              "name": "",
+              "points": 0
             },
             {
-              "name": "mitzal",
-              "points": 5456
+              "name": "",
+              "points": 0
             },
             {
-              "name": "davidl",
-              "points": 5132
+              "name": "",
+              "points": 0
             },
             {
-              "name": "mohamad",
-              "points": 84845
+              "name": "",
+              "points": 0
             },
             {
-              "name": "chinchulin",
-              "points": 44512
+              "name": "",
+              "points": 0
             },
             {
-              "name": "akita",
-              "points": 7874
+              "name": "",
+              "points": 0
             }
           ]
         },
@@ -86,32 +86,32 @@
           "id": "C",
           "players": [
             {
-              "name": "aoky",
-              "points": 656230
+              "name": "",
+              "points": 0
             },
             {
-              "name": "felicinao",
-              "points": 54632
+              "name": "",
+              "points": 0
             },
             {
-              "name": "miguel",
-              "points": 62488
+              "name": "",
+              "points": 0
             },
             {
-              "name": "alexys",
-              "points": 5623
+              "name": "",
+              "points": 0
             },
             {
-              "name": "rafael",
-              "points": 9563
+              "name": "",
+              "points": 0
             },
             {
-              "name": "roberto",
-              "points": 62309
+              "name": "",
+              "points": 0
             },
             {
-              "name": "pauñ",
-              "points": 629
+              "name": "",
+              "points": 0
             }
           ]
         },
@@ -119,1398 +119,38 @@
           "id": "D",
           "players": [
             {
-              "name": "patricia",
-              "points": 596
+              "name": "",
+              "points": 0
             },
             {
-              "name": "durgino",
-              "points": 562
+              "name": "",
+              "points": 0
             },
             {
-              "name": "scaloni",
-              "points": 8485
+              "name": "",
+              "points": 0
             },
             {
-              "name": "hugo",
-              "points": 95623
+              "name": "",
+              "points": 0
             },
             {
-              "name": "nicola",
-              "points": 69595
+              "name": "",
+              "points": 0
             },
             {
-              "name": "wilner",
-              "points": 84132
+              "name": "",
+              "points": 0
             },
             {
-              "name": "ivan",
-              "points": 8756
+              "name": "",
+              "points": 0
             }
           ]
         }
       ]
     },
     "2": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "Misael",
-              "points": 150000
-            },
-            {
-              "name": "Eeleazar",
-              "points": 389
-            },
-            {
-              "name": "Mitzaida",
-              "points": 20000
-            },
-            {
-              "name": "Diego",
-              "points": 98
-            },
-            {
-              "name": "Karla F.",
-              "points": 0
-            },
-            {
-              "name": "Maria H",
-              "points": 25200
-            },
-            {
-              "name": "Julian J",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "Elena",
-              "points": 0
-            },
-            {
-              "name": "Fabian",
-              "points": 0
-            },
-            {
-              "name": "Gaby",
-              "points": 0
-            },
-            {
-              "name": "Hugo",
-              "points": 0
-            },
-            {
-              "name": "Stella D",
-              "points": 0
-            },
-            {
-              "name": "Andres U",
-              "points": 52000
-            },
-            {
-              "name": "Simon P",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "Ines",
-              "points": 100
-            },
-            {
-              "name": "Javier",
-              "points": 0
-            },
-            {
-              "name": "Karen",
-              "points": 0
-            },
-            {
-              "name": "Leo",
-              "points": 0
-            },
-            {
-              "name": "Pedro P",
-              "points": 0
-            },
-            {
-              "name": "Miguel A",
-              "points": 30000
-            },
-            {
-              "name": "Ptricia L",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "Marta",
-              "points": 0
-            },
-            {
-              "name": "Nico",
-              "points": 0
-            },
-            {
-              "name": "Olga",
-              "points": 0
-            },
-            {
-              "name": "Pablo",
-              "points": 0
-            },
-            {
-              "name": "Reyner M",
-              "points": 25633
-            },
-            {
-              "name": "Henry F",
-              "points": 0
-            },
-            {
-              "name": "Carl J",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "3": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "vdgdsfg",
-              "points": 0
-            },
-            {
-              "name": "dgfd",
-              "points": 0
-            },
-            {
-              "name": "dfgdf",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "gfddfg",
-              "points": 0
-            },
-            {
-              "name": "gddfg",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "dfgdf",
-              "points": 0
-            },
-            {
-              "name": "dfgdgfg",
-              "points": 0
-            },
-            {
-              "name": "gdfg",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "bmvnbv",
-              "points": 0
-            },
-            {
-              "name": "mvbmbv",
-              "points": 0
-            },
-            {
-              "name": "mvbnvbm",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "4": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "5": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": -1
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "6": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "7": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "8": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "9": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "15": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "17": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "18": {
       "tables": [
         {
           "id": "A",
@@ -1654,414 +294,6 @@
           "id": "A",
           "players": [
             {
-              "name": "dfzsdafasdfsadf",
-              "points": 1222
-            },
-            {
-              "name": "fasdfasdfsadf",
-              "points": 222
-            },
-            {
-              "name": "frgfdsgsd",
-              "points": 0
-            },
-            {
-              "name": "asfasa",
-              "points": 0
-            },
-            {
-              "name": "ssafdsdf",
-              "points": 0
-            },
-            {
-              "name": "sdfsaa",
-              "points": 0
-            },
-            {
-              "name": "asdfasf",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "sdfsdfa",
-              "points": 0
-            },
-            {
-              "name": "afsdfas",
-              "points": 0
-            },
-            {
-              "name": "asdfsafa",
-              "points": 0
-            },
-            {
-              "name": "sffasd",
-              "points": 0
-            },
-            {
-              "name": "sdfsf",
-              "points": 0
-            },
-            {
-              "name": "sadfas",
-              "points": 0
-            },
-            {
-              "name": "asdfhghfdh",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "hdfgjhfhertre",
-              "points": 0
-            },
-            {
-              "name": "twetwet",
-              "points": 0
-            },
-            {
-              "name": "we",
-              "points": 0
-            },
-            {
-              "name": "qrqwrerqw",
-              "points": 0
-            },
-            {
-              "name": "erqwerq",
-              "points": 0
-            },
-            {
-              "name": "qrew",
-              "points": 0
-            },
-            {
-              "name": "qer",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "rqerqer",
-              "points": 0
-            },
-            {
-              "name": "qwerqw",
-              "points": 0
-            },
-            {
-              "name": "qwertrey",
-              "points": 0
-            },
-            {
-              "name": "retyer",
-              "points": 0
-            },
-            {
-              "name": "tdfgaf",
-              "points": 0
-            },
-            {
-              "name": "asynutyjrtehs",
-              "points": 0
-            },
-            {
-              "name": "wrasdfs",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "2": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "3": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "C",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        },
-        {
-          "id": "D",
-          "players": [
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            }
-          ]
-        }
-      ]
-    },
-    "4": {
-      "tables": [
-        {
-          "id": "A",
-          "players": [
-            {
               "name": "",
               "points": 0
             },
@@ -2197,151 +429,125 @@
     {
       "id": "A",
       "title": "Mesa A",
-      "players": "dfzsdafasdfsadf, fasdfasdfsadf, frgfdsgsd, asfasa, ssafdsdf, sdfsaa, asdfasf",
+      "players": "",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "B",
       "title": "Mesa B",
-      "players": "sdfsdfa, afsdfas, asdfsafa, sffasd, sdfsf, sadfas, asdfhghfdh",
+      "players": "",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "C",
       "title": "Mesa C",
-      "players": "hdfgjhfhertre, twetwet, we, qrqwrerqw, erqwerq, qrew, qer",
+      "players": "",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "D",
       "title": "Mesa D",
-      "players": "rqerqer, qwerqw, qwertrey, retyer, tdfgaf, asynutyjrtehs, wrasdfs",
+      "players": "",
       "score": "",
       "status": "En juego"
     }
   ],
-  "ranking": [
-    {
-      "position": 1,
-      "name": "Ana",
-      "points": 120
-    },
-    {
-      "position": 2,
-      "name": "Javier",
-      "points": 110
-    },
-    {
-      "position": 3,
-      "name": "Marta",
-      "points": 105
-    },
-    {
-      "position": 4,
-      "name": "Hugo",
-      "points": 98
-    },
-    {
-      "position": 5,
-      "name": "Bruno",
-      "points": 90
-    }
-  ],
+  "ranking": [],
   "finalists": [
     {
-      "name": "Raul ",
-      "points": 43232
+      "name": "",
+      "points": 0
     },
     {
-      "name": "Carlos",
-      "points": 43111
+      "name": "",
+      "points": 0
     },
     {
-      "name": "Eleazar",
-      "points": 23432
+      "name": "",
+      "points": 0
     },
     {
-      "name": "Javier",
-      "points": 21443
+      "name": "",
+      "points": 0
     },
     {
-      "name": "Maria",
-      "points": 17435
+      "name": "",
+      "points": 0
     },
     {
-      "name": "Gabriel",
-      "points": 15433
+      "name": "",
+      "points": 0
     },
     {
-      "name": "Anderson",
-      "points": 12433
+      "name": "",
+      "points": 0
     },
     {
-      "name": "Mitzaida",
-      "points": 11675
+      "name": "",
+      "points": 0
     },
     {
-      "name": "Misael",
-      "points": 10897
+      "name": "",
+      "points": 0
     }
   ],
   "podium": [
     {
       "position": 1,
-      "name": "Raul",
-      "prize": "$25,000",
-      "points": 523266
+      "name": "",
+      "prize": "",
+      "points": 0
     },
     {
       "position": 2,
-      "name": "Gabriel",
-      "prize": "$10,000",
-      "points": 55322
+      "name": "",
+      "prize": "",
+      "points": 0
     },
     {
       "position": 3,
-      "name": "Eleazar",
-      "prize": "$5,000",
-      "points": 99555
+      "name": "",
+      "prize": "",
+      "points": 0
     },
     {
       "position": 4,
-      "name": "Mitzaida",
+      "name": "",
       "prize": "",
-      "points": 28852
+      "points": 0
     },
     {
       "position": 5,
-      "name": "Misael",
+      "name": "",
       "prize": "",
-      "points": 95226
+      "points": 0
     },
     {
       "position": 6,
-      "name": "Pedro",
+      "name": "",
       "prize": "",
-      "points": 51622
+      "points": 0
     },
     {
       "position": 7,
-      "name": "Diego",
+      "name": "",
       "prize": "",
-      "points": 56562
+      "points": 0
     },
     {
       "position": 8,
-      "name": "Julian",
+      "name": "",
       "prize": "",
-      "points": 522
+      "points": 0
     },
     {
       "position": 9,
-      "name": "Maria",
+      "name": "",
       "prize": "",
-      "points": 262
+      "points": 0
     }
   ],
   "secondaryPrizes": [
@@ -2370,118 +576,5 @@
       "prize": null
     }
   ],
-  "globalRanking": [
-    {
-      "name": "dfzsdafasdfsadf",
-      "points": 1222
-    },
-    {
-      "name": "fasdfasdfsadf",
-      "points": 222
-    },
-    {
-      "name": "frgfdsgsd",
-      "points": 0
-    },
-    {
-      "name": "asfasa",
-      "points": 0
-    },
-    {
-      "name": "ssafdsdf",
-      "points": 0
-    },
-    {
-      "name": "sdfsaa",
-      "points": 0
-    },
-    {
-      "name": "asdfasf",
-      "points": 0
-    },
-    {
-      "name": "sdfsdfa",
-      "points": 0
-    },
-    {
-      "name": "afsdfas",
-      "points": 0
-    },
-    {
-      "name": "asdfsafa",
-      "points": 0
-    },
-    {
-      "name": "sffasd",
-      "points": 0
-    },
-    {
-      "name": "sdfsf",
-      "points": 0
-    },
-    {
-      "name": "sadfas",
-      "points": 0
-    },
-    {
-      "name": "asdfhghfdh",
-      "points": 0
-    },
-    {
-      "name": "hdfgjhfhertre",
-      "points": 0
-    },
-    {
-      "name": "twetwet",
-      "points": 0
-    },
-    {
-      "name": "we",
-      "points": 0
-    },
-    {
-      "name": "qrqwrerqw",
-      "points": 0
-    },
-    {
-      "name": "erqwerq",
-      "points": 0
-    },
-    {
-      "name": "qrew",
-      "points": 0
-    },
-    {
-      "name": "qer",
-      "points": 0
-    },
-    {
-      "name": "rqerqer",
-      "points": 0
-    },
-    {
-      "name": "qwerqw",
-      "points": 0
-    },
-    {
-      "name": "qwertrey",
-      "points": 0
-    },
-    {
-      "name": "retyer",
-      "points": 0
-    },
-    {
-      "name": "tdfgaf",
-      "points": 0
-    },
-    {
-      "name": "asynutyjrtehs",
-      "points": 0
-    },
-    {
-      "name": "wrasdfs",
-      "points": 0
-    }
-  ]
+  "globalRanking": []
 }

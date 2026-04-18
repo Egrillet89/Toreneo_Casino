@@ -617,7 +617,7 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #fff4d1;
-  background: linear-gradient(180deg, #fff9e6 0%, #e0ba6a 35%, #b8860b 50%, #f7d683 70%, #d4a040 100%);
+  background: linear-gradient(180deg, #fff9e6 0%, #e0ba6a 35%,  #f7d683 70%, #d4a040 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.8));
@@ -642,13 +642,26 @@ body {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
-
+.podium-overlay[data-pos="1"] .podium-points {
+  font-size: 1.07em;
+}
+.podium-overlay[data-pos="2"] .podium-points {
+  font-size: 0.7em;
+}
+.podium-overlay[data-pos="3"] .podium-points {
+  font-size: 0.6em;
+  justify-self: end;
+  text-align: left;
+  padding-left: 0;
+  position: relative;
+  left: 5px;
+}
 .podium-overlays {
   --podium-1-left: 50%;
   --podium-1-top: 40%;
   --podium-2-left: 31%;
   --podium-2-top: 41%;
-  --podium-3-left: 68.5%;
+  --podium-3-left: 69%;
   --podium-3-top: 41%;
   --podium-4-left: 50%;
   --podium-4-bottom: 20%;
@@ -774,7 +787,7 @@ body {
   white-space: nowrap;
   font-size: 1.7em;
   color: #fff4d1;
-  background: linear-gradient(180deg, #fff9e6 0%, #e0ba6a 35%, #b8860b 50%, #f7d683 70%, #d4a040 100%);
+  background: linear-gradient(180deg, #fff9e6 0%, #e0ba6a 35%,  #f7d683 70%, #d4a040 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.8));
@@ -874,7 +887,7 @@ body {
 
 .mesa-player-name {
   color: #fff4d1;
-  background: linear-gradient(180deg, #fff9e6 0%, #e0ba6a 35%, #b8860b 50%, #f7d683 70%, #d4a040 100%);
+  background: linear-gradient(180deg, #fff9e6 0%, #e0ba6a 35%, #f7d683 70%, #d4a040 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.8));
@@ -888,12 +901,12 @@ body {
 
 .mesa-player-points {
   color: rgba(255, 255, 255, 0.92);
-  font-weight: 500;
+  font-weight: 550;
   text-align: right;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
-  font-size: 0.96em;
+  font-size: 1em;
 }
 
 .mesa-number-marker {
@@ -1366,6 +1379,13 @@ body {
 .editor-list {
   display: grid;
   gap: 16px;
+}
+
+.admin-top-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .form-grid {

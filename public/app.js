@@ -313,10 +313,28 @@ function computeRankingFromRoundTables(tables) {
 }
 
 let lastRankingKey = "";
+let lastRankingResetAt = null;
 let rankingAnimationFrameId = null;
 let rankingLastFrameTime = 0;
 let rankingOffsetPx = 0;
 let rankingScrollHeightPx = 0;
+
+function applyRankingReset(state) {
+  const resetAt = typeof state?.rankingResetAt === "string" ? state.rankingResetAt : "";
+  if (!resetAt) return;
+  if (resetAt === lastRankingResetAt) return;
+  lastRankingResetAt = resetAt;
+
+  try {
+    const key = "torneoBaccarat:rankingResetAt";
+    localStorage.setItem(key, resetAt);
+    localStorage.removeItem("torneoBaccarat:globalRanking");
+    localStorage.removeItem("torneoBaccarat:globalRanking:rounds");
+    localStorage.removeItem("torneoBaccarat:globalRanking:semifinal");
+
+    lastRankingKey = "";
+  } catch {}
+}
 
 function stopRankingAnimation() {
   if (rankingAnimationFrameId) {
@@ -451,6 +469,8 @@ function renderState(state) {
   const roundNumber = getRoundNumber(state);
   const phase = getRoundsPhase(state);
 
+  applyRankingReset(state);
+
   if (nodes.roundTitle) {
     const isRound1 = roundNumber === 1;
     nodes.roundTitle.classList.toggle("is-hidden", isRound1);
@@ -523,6 +543,7 @@ function renderState(state) {
     } catch {}
   } else {
     try {
+      if (typeof state?.rankingResetAt === "string" && state.rankingResetAt) throw new Error("skip");
       const stored = JSON.parse(localStorage.getItem(rankingStorageKey) || "null");
       if (Array.isArray(stored)) computedRanking = stored;
     } catch {}
