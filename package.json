@@ -2,9 +2,13 @@
   "name": "torneo-baccarat",
   "version": "1.0.0",
   "main": "server.js",
+  "bin": {
+    "torneo-casino": "server.js"
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
+    "build:win": "pkg server.js --targets node18-win-x64 --output dist/torneo-casino.exe",
     "test": "echo \"Sin pruebas automatizadas\""
   },
   "keywords": [],
@@ -14,5 +18,14 @@
   "dependencies": {
     "express": "^5.2.1",
     "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "assets": [
+      "public/**/*",
+      "data/state.json"
+    ]
   }
 }

@@ -9,8 +9,11 @@ const server = http.createServer(app);
 const io = new Server(server);
 
 const PORT = process.env.PORT || 3000;
-const DATA_FILE = path.join(__dirname, "data", "state.json");
-const PUBLIC_DIR = path.join(__dirname, "public");
+const RUNTIME_DIR = process.pkg ? path.dirname(process.execPath) : __dirname;
+const DATA_FILE = path.join(RUNTIME_DIR, "data", "state.json");
+const PUBLIC_DIR = fs.existsSync(path.join(RUNTIME_DIR, "public"))
+  ? path.join(RUNTIME_DIR, "public")
+  : path.join(__dirname, "public");
 
 function clampRound(value) {
   const asNumber = Number(value);
@@ -136,12 +139,34 @@ function normalizeState(state) {
   return next;
 }
 
+function ensureWritableStateFile() {
+  try {
+    if (fs.existsSync(DATA_FILE)) return;
+    fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
+    const bundled = path.join(__dirname, "data", "state.json");
+    if (fs.existsSync(bundled)) {
+      fs.copyFileSync(bundled, DATA_FILE);
+      return;
+    }
+    fs.writeFileSync(DATA_FILE, `${JSON.stringify(normalizeState({}), null, 2)}\n`, "utf8");
+  } catch {
+    return;
+  }
+}
+
 function readState() {
-  const raw = fs.readFileSync(DATA_FILE, "utf8");
-  return normalizeState(JSON.parse(raw));
+  ensureWritableStateFile();
+  try {
+    const raw = fs.readFileSync(DATA_FILE, "utf8");
+    return normalizeState(JSON.parse(raw));
+  } catch {
+    ensureWritableStateFile();
+    return normalizeState({});
+  }
 }
 
 function writeState(nextState) {
+  ensureWritableStateFile();
   const payload = {
     ...normalizeState(nextState),
     updatedAt: new Date().toISOString(),
