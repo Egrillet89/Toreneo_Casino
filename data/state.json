@@ -1,12 +1,12 @@
 {
   "tournamentName": "Torneo de Baccarat",
-  "broadcastTitle": "RONDA 1",
+  "broadcastTitle": "SEMIFINAL",
   "headline": "",
-  "updatedAt": "2026-04-18T18:32:55.967Z",
-  "visibleSection": "rounds",
-  "totalInscritos": 0,
-  "roundsPhase": "rounds",
-  "currentRoundNumber": 1,
+  "updatedAt": "2026-04-19T06:25:13.456Z",
+  "visibleSection": "podium",
+  "totalInscritos": 18,
+  "roundsPhase": "semifinal",
+  "currentRoundNumber": 2,
   "currentSemifinalNumber": 1,
   "currentRound": {
     "name": "Grupo 1",
@@ -20,32 +20,32 @@
           "id": "A",
           "players": [
             {
-              "name": "",
+              "name": "GIUSEPPE R.",
+              "points": 30000
+            },
+            {
+              "name": "JHONNY D.",
+              "points": 40000
+            },
+            {
+              "name": "IBHAHIM G.",
               "points": 0
             },
             {
-              "name": "",
+              "name": "HECTOR M.",
+              "points": 6000
+            },
+            {
+              "name": "LEONARDO R.",
+              "points": 37000
+            },
+            {
+              "name": "RAMON M.",
               "points": 0
             },
             {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
+              "name": "LIBORIO M.",
+              "points": 44000
             }
           ]
         },
@@ -53,31 +53,31 @@
           "id": "B",
           "players": [
             {
-              "name": "",
+              "name": "MICHELE B.",
+              "points": 19000
+            },
+            {
+              "name": "NELSOS G.",
+              "points": 105000
+            },
+            {
+              "name": "JOSE G.",
+              "points": 64000
+            },
+            {
+              "name": "MARCIAL V.",
+              "points": 58000
+            },
+            {
+              "name": "VINCENZO C.",
               "points": 0
             },
             {
-              "name": "",
-              "points": 0
+              "name": "YIWEI L.",
+              "points": 50000
             },
             {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
+              "name": "HENRY R.",
               "points": 0
             }
           ]
@@ -86,31 +86,31 @@
           "id": "C",
           "players": [
             {
-              "name": "",
+              "name": "NAIBELIS G.",
               "points": 0
             },
             {
-              "name": "",
+              "name": "DANIEL G.",
               "points": 0
             },
             {
-              "name": "",
-              "points": 0
+              "name": "EDWIN M.",
+              "points": 31000
             },
             {
-              "name": "",
-              "points": 0
+              "name": "YAIREN E.",
+              "points": 36000
             },
             {
-              "name": "",
-              "points": 0
+              "name": "ZHIZION L",
+              "points": 110000
             },
             {
-              "name": "",
-              "points": 0
+              "name": "ANDRES G.",
+              "points": 40000
             },
             {
-              "name": "",
+              "name": "NABIL E.",
               "points": 0
             }
           ]
@@ -119,31 +119,31 @@
           "id": "D",
           "players": [
             {
-              "name": "",
+              "name": "RAFAEL T.",
+              "points": 74000
+            },
+            {
+              "name": "HECTOR V.",
               "points": 0
             },
             {
-              "name": "",
+              "name": "JAVIER C.",
+              "points": 67000
+            },
+            {
+              "name": "NAYET E.",
               "points": 0
             },
             {
-              "name": "",
+              "name": "JOSE J.",
               "points": 0
             },
             {
-              "name": "",
-              "points": 0
+              "name": "LUIS R.",
+              "points": 120000
             },
             {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
+              "name": "BASANA Z.",
               "points": 0
             }
           ]
@@ -156,32 +156,32 @@
           "id": "A",
           "players": [
             {
-              "name": "",
+              "name": "JINCHAO F",
+              "points": 230000
+            },
+            {
+              "name": "FU HUA F",
+              "points": 250000
+            },
+            {
+              "name": "JUNJIE W",
               "points": 0
             },
             {
-              "name": "",
+              "name": "IVAN L",
+              "points": 188000
+            },
+            {
+              "name": "HECTOR V",
+              "points": 171000
+            },
+            {
+              "name": "CARLOS C",
               "points": 0
             },
             {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
+              "name": "IONCOLI",
+              "points": 58000
             }
           ]
         },
@@ -189,7 +189,7 @@
           "id": "B",
           "players": [
             {
-              "name": "",
+              "name": "JINCHAO",
               "points": 0
             },
             {
@@ -294,28 +294,28 @@
           "id": "A",
           "players": [
             {
-              "name": "",
+              "name": "FU HUA",
+              "points": 310000
+            },
+            {
+              "name": "YAIREN",
+              "points": 60000
+            },
+            {
+              "name": "HECTOR V",
+              "points": 234000
+            },
+            {
+              "name": "JHONNY D",
               "points": 0
             },
             {
-              "name": "",
-              "points": 0
+              "name": "NELSON",
+              "points": 175000
             },
             {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
-              "points": 0
+              "name": "IONCOLI",
+              "points": 68000
             },
             {
               "name": "",
@@ -327,27 +327,27 @@
           "id": "B",
           "players": [
             {
-              "name": "",
+              "name": "JINCHAO",
               "points": 0
             },
             {
-              "name": "",
+              "name": "LEONARDO",
               "points": 0
             },
             {
-              "name": "",
+              "name": "LUIS R",
+              "points": 136000
+            },
+            {
+              "name": "LIBORIO",
               "points": 0
             },
             {
-              "name": "",
-              "points": 0
+              "name": "RAFAEL",
+              "points": 65000
             },
             {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
+              "name": "MARCIAL",
               "points": 0
             },
             {
@@ -360,27 +360,27 @@
           "id": "C",
           "players": [
             {
-              "name": "",
+              "name": "IVAN L",
+              "points": 188000
+            },
+            {
+              "name": "ANDRES G",
               "points": 0
             },
             {
-              "name": "",
+              "name": "ZHIZION L",
               "points": 0
             },
             {
-              "name": "",
+              "name": "YIWEI",
               "points": 0
             },
             {
-              "name": "",
-              "points": 0
+              "name": "JAVIER",
+              "points": 178000
             },
             {
-              "name": "",
-              "points": 0
-            },
-            {
-              "name": "",
+              "name": "JOSE G",
               "points": 0
             },
             {
@@ -429,21 +429,21 @@
     {
       "id": "A",
       "title": "Mesa A",
-      "players": "",
+      "players": "FU HUA, YAIREN, HECTOR V, JHONNY D, NELSON, IONCOLI",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "B",
       "title": "Mesa B",
-      "players": "",
+      "players": "JINCHAO, LEONARDO, LUIS R, LIBORIO, RAFAEL, MARCIAL",
       "score": "",
       "status": "En juego"
     },
     {
       "id": "C",
       "title": "Mesa C",
-      "players": "",
+      "players": "IVAN L, ANDRES G, ZHIZION L, YIWEI, JAVIER, JOSE G",
       "score": "",
       "status": "En juego"
     },
@@ -458,94 +458,94 @@
   "ranking": [],
   "finalists": [
     {
-      "name": "",
-      "points": 0
+      "name": "FU HUA",
+      "points": 310000
     },
     {
-      "name": "",
-      "points": 0
+      "name": "HECTOR V",
+      "points": 234000
     },
     {
-      "name": "",
-      "points": 0
+      "name": "IVAN L",
+      "points": 188000
     },
     {
-      "name": "",
-      "points": 0
+      "name": "JAVIER",
+      "points": 178000
     },
     {
-      "name": "",
-      "points": 0
+      "name": "NELSON",
+      "points": 175000
     },
     {
-      "name": "",
-      "points": 0
+      "name": "LUIS R",
+      "points": 136000
     },
     {
-      "name": "",
-      "points": 0
+      "name": "IONCOLI",
+      "points": 68000
     },
     {
-      "name": "",
-      "points": 0
+      "name": "RAFAEL",
+      "points": 65000
     },
     {
-      "name": "",
-      "points": 0
+      "name": "YAIREN",
+      "points": 60000
     }
   ],
   "podium": [
     {
       "position": 1,
-      "name": "",
+      "name": "FU HUA",
       "prize": "",
-      "points": 0
+      "points": 760000
     },
     {
       "position": 2,
-      "name": "",
+      "name": "JAVIER",
       "prize": "",
-      "points": 0
+      "points": 740000
     },
     {
       "position": 3,
-      "name": "",
+      "name": "HECTOR",
       "prize": "",
-      "points": 0
+      "points": 459000
     },
     {
       "position": 4,
-      "name": "",
+      "name": "IVAN",
       "prize": "",
-      "points": 0
+      "points": 277000
     },
     {
       "position": 5,
-      "name": "",
+      "name": "RAFAEL",
       "prize": "",
-      "points": 0
+      "points": 165000
     },
     {
       "position": 6,
-      "name": "",
+      "name": "IONCOLI",
       "prize": "",
-      "points": 0
+      "points": 141000
     },
     {
       "position": 7,
-      "name": "",
+      "name": "YAIREN",
       "prize": "",
-      "points": 0
+      "points": 125000
     },
     {
       "position": 8,
-      "name": "",
+      "name": "NELSON",
       "prize": "",
       "points": 0
     },
     {
       "position": 9,
-      "name": "",
+      "name": "LUIS R",
       "prize": "",
       "points": 0
     }
@@ -576,5 +576,94 @@
       "prize": null
     }
   ],
-  "globalRanking": []
+  "globalRanking": [
+    {
+      "name": "HECTOR V",
+      "points": 405000
+    },
+    {
+      "name": "IVAN L",
+      "points": 376000
+    },
+    {
+      "name": "FU HUA",
+      "points": 310000
+    },
+    {
+      "name": "FU HUA F",
+      "points": 250000
+    },
+    {
+      "name": "JINCHAO F",
+      "points": 230000
+    },
+    {
+      "name": "JAVIER",
+      "points": 178000
+    },
+    {
+      "name": "NELSON",
+      "points": 175000
+    },
+    {
+      "name": "LUIS R",
+      "points": 136000
+    },
+    {
+      "name": "IONCOLI",
+      "points": 126000
+    },
+    {
+      "name": "RAFAEL",
+      "points": 65000
+    },
+    {
+      "name": "YAIREN",
+      "points": 60000
+    },
+    {
+      "name": "JHONNY D",
+      "points": 0
+    },
+    {
+      "name": "JINCHAO",
+      "points": 0
+    },
+    {
+      "name": "LEONARDO",
+      "points": 0
+    },
+    {
+      "name": "LIBORIO",
+      "points": 0
+    },
+    {
+      "name": "MARCIAL",
+      "points": 0
+    },
+    {
+      "name": "ANDRES G",
+      "points": 0
+    },
+    {
+      "name": "ZHIZION L",
+      "points": 0
+    },
+    {
+      "name": "YIWEI",
+      "points": 0
+    },
+    {
+      "name": "JOSE G",
+      "points": 0
+    },
+    {
+      "name": "JUNJIE W",
+      "points": 0
+    },
+    {
+      "name": "CARLOS C",
+      "points": 0
+    }
+  ]
 }

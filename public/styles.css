@@ -588,7 +588,7 @@ body {
 }
 
 .podium-overlay[data-pos="1"] .podium-name {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .podium-overlay[data-pos="1"] .podium-points,
@@ -643,7 +643,7 @@ body {
   white-space: nowrap;
 }
 .podium-overlay[data-pos="1"] .podium-points {
-  font-size: 1.07em;
+  font-size: 1.00em;
 }
 .podium-overlay[data-pos="2"] .podium-points {
   font-size: 0.7em;
@@ -1006,7 +1006,7 @@ body {
 
 /* modificar columnas mesa B */
 .rounds-template.template-rondas .mesa-overlay[data-id="B"] .mesa-players-col:not(.is-right) .mesa-player-row {
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: 5px 1fr 20px;
 }
 
 .rounds-template.template-rondas .mesa-overlay[data-id="B"] .mesa-players-col:not(.is-right) .mesa-player-points {
